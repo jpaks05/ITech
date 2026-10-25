@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en-PH">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iTECH | Websites, Systems &amp; Documentation</title>
+  <meta name="description"
+    content="iTECH delivers responsive websites, C# business applications, and comprehensive technical documentation for growing businesses in the Philippines.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap">
+  <link rel="icon" type="image/png" href="images/iTECH.png">
+  <link rel="apple-touch-icon" href="images/iTECH.png">
+  <script>document.documentElement.classList.add("js")</script>
+  <link rel="stylesheet" href="style.css">
+  <!-- EmailJS SDK -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <noscript>
+    <style>
+      .loader {
+        display: none
+      }
+    </style>
+  </noscript>
+</head>
+
+<body>
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader-in"><span class="loader-brand">iTECH</span><span class="loader-bar"><i></i></span></div>
+  </div>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <a class="skip" href="#about">Skip to content</a>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container bar">
+      <a href="#home" class="brand">iTECH</a>
+      <button type="button" class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false"
+        aria-controls="nav">Menu</button>
+      <nav id="nav" class="nav" aria-label="Main">
+        <a href="#about">About</a>
+        <a href="#team">Team</a>
+        <a href="#projects">Projects</a>
+        <a href="#offers">Offers</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="nav-cta">Contact us</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="hero">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="container">
+        <div class="hero-copy">
+          <h1 class="rise" style="--i:0">Websites, systems and project documents for growing businesses.</h1>
+          <p class="lead rise" style="--i:1">We develop websites and systems along with clear documentation, so every
+            client can understand, use and maintain what we deliver.</p>
+          <div class="actions rise" style="--i:2">
+            <a class="btn primary" href="#contact">Start a project</a>
+            <a class="btn ghost" href="#projects">See our work</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content">
+            <span class="eyebrow">About us</span>
+            <h2>Reliable software, clearly documented</h2>
+            <p class="about-lead">
+              <strong>iTECH</strong> is a Manila-based technology and software development company specializing in
+              custom C# desktop applications, responsive websites, and technical documentation.
+            </p>
+            <p class="about-subtext">
+              We deliver reliable, user-friendly, and maintainable digital solutions supported by quality assurance
+              testing, efficient database design, and clear technical documentation. Our goal is to help businesses and
+              organizations improve their operations through practical technology solutions.
+            </p>
+            <div class="about-cta-row">
+              <a class="btn primary" href="#contact">Start a project</a>
+              <a class="btn ghost-navy" href="#projects">See our work</a>
+            </div>
+          </div>
+
+          <div class="about-media-wrapper">
+            <figure class="about-photo">
+              <img src="images/about.jpg" alt="The iTECH team" loading="lazy" data-fb="hide-media">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Team -->
+    <section id="team" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Our specialists</span>
+          <h2>Meet the team behind iTECH</h2>
+          <p class="sub">A team of four covering software development, QA testing and technical documentation,
+            delivering dependable websites and business applications.</p>
+        </div>
+
+        <div class="grid four" id="teamGrid">
+          <article class="team-card">
+            <div class="team-photo-wrap">
+              <div class="team-photo"><img src="images/angelo.png" alt="Angelo Dela Cruz" loading="lazy"
+                  data-fb="initials" data-i="AD"></div>
+              <span class="team-specialty-badge">Lead Developer</span>
+            </div>
+            <div class="team-body">
+              <h3>Angelo Dela Cruz</h3>
+              <p class="team-role">Lead Developer &amp; Systems Specialist</p>
+            </div>
+            <div class="team-actions">
+              <button type="button" class="btn-team primary" data-member="0" aria-haspopup="dialog"><span>View
+                  details</span></button>
+              <a class="btn-team secondary" href="cv/angelo_cv.pdf" target="_blank" rel="noopener"><span>CV</span></a>
+            </div>
+          </article>
+          <article class="team-card">
+            <div class="team-photo-wrap">
+              <div class="team-photo"><img src="images/jess.png" alt="Jessica Tamilar Lopez" loading="lazy"
+                  data-fb="initials" data-i="JL"></div>
+              <span class="team-specialty-badge">Web &amp; Data Encoder</span>
+            </div>
+            <div class="team-body">
+              <h3>Jessica Lopez</h3>
+              <p class="team-role">Front-End Developer &amp; Data Encoder</p>
+            </div>
+            <div class="team-actions">
+              <button type="button" class="btn-team primary" data-member="1" aria-haspopup="dialog"><span>View
+                  details</span></button>
+              <a class="btn-team secondary" href="cv/jessica_cv.pdf" target="_blank" rel="noopener"><span>CV</span></a>
+            </div>
+          </article>
+          <article class="team-card">
+            <div class="team-photo-wrap">
+              <div class="team-photo"><img src="images/jud.png" alt="Judilyn Nadal" loading="lazy" data-fb="initials"
+                  data-i="JN"></div>
+              <span class="team-specialty-badge">QA &amp; Testing</span>
+            </div>
+            <div class="team-body">
+              <h3>Judilyn Nadal</h3>
+              <p class="team-role">QA &amp; System Testing Specialist</p>
+            </div>
+            <div class="team-actions">
+              <button type="button" class="btn-team primary" data-member="2" aria-haspopup="dialog"><span>View
+                  details</span></button>
+              <a class="btn-team secondary" href="cv/judilyn_cv.pdf" target="_blank" rel="noopener"><span>CV</span></a>
+            </div>
+          </article>
+          <article class="team-card">
+            <div class="team-photo-wrap">
+              <div class="team-photo"><img src="images/patrick.png" alt="John Patrick Sales" loading="lazy"
+                  data-fb="initials" data-i="JS"></div>
+              <span class="team-specialty-badge">Systems &amp; Docs</span>
+            </div>
+            <div class="team-body">
+              <h3>John Patrick Sales</h3>
+              <p class="team-role">Systems Analyst &amp; Documentation</p>
+            </div>
+            <div class="team-actions">
+              <button type="button" class="btn-team primary" data-member="3" aria-haspopup="dialog"><span>View
+                  details</span></button>
+              <a class="btn-team secondary" href="cv/jpatrick_cv.pdf" target="_blank" rel="noopener"><span>CV</span></a>
+            </div>
+          </article>
+        </div>
+
+        <!-- Full profiles shown in the "View details" window -->
+        <template id="member-0">
+          <div class="modal-profile-header">
+            <div class="modal-profile-avatar"><img src="images/angelo.png" alt="Angelo Dela Cruz" loading="lazy"
+                data-fb="initials" data-i="AD"></div>
+            <div class="modal-profile-info">
+              <h3 id="modalTitle">Angelo Dela Cruz</h3>
+              <div class="modal-profile-role">Lead Developer &amp; Systems Specialist</div>
+              <div class="modal-meta-row"><span class="modal-meta-chip">PHINMA Saint Jude College Manila</span><span
+                  class="modal-meta-chip">BS Information Technology</span><span
+                  class="modal-meta-chip status-available"><span class="pulse-dot"></span> Available for Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="modal-section-card">
+            <div class="modal-section-title">Professional Summary</div>
+            <p>Motivated and detail-oriented BS Information Technology student with hands-on experience in IT support,
+              hardware and software troubleshooting, and system development. Completed an internship at IBEX Global
+              Solutions providing technical support and computer maintenance. Knowledgeable in C#, HTML, CSS,
+              JavaScript, and basic networking.</p>
+          </div>
+          <div class="modal-section-card">
+            <div class="modal-section-title">Core Technical Proficiencies</div>
+            <div class="modal-skill-chips"><span class="modal-skill-chip">C# / .NET Application Development</span><span
+                class="modal-skill-chip">Hardware &amp; Software Troubleshooting</span><span
+                class="modal-skill-chip">Network Configuration</span><span class="modal-skill-chip">MySQL Database
+                Management</span><span class="modal-skill-chip">HTML5 / CSS3 / JavaScript</span><span
+                class="modal-skill-chip">Computer Systems Servicing (NC II)</span></div>
+          </div>
+          <div class="modal-section-card">
+            <div class="modal-section-title">Education &amp; Certifications</div>
+            <ul class="modal-list">
+              <li class="modal-item">
+                <div class="modal-item-title">Bachelor of Science in Information Technology (BSIT)</div>
+                <div class="modal-item-desc">PHINMA Saint Jude College Manila • 2023 – Present</div>
+              </li>
+              <li class="modal-item">
+                <div class="modal-item-title">National Certificate II (NC II) – Computer Systems Servicing</div>
+                <div class="modal-item-desc">Technical Education and Skills Development Authority (TESDA) • 2023</div>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-section-card">
+            <div class="modal-section-title">Industry Experience</div>
+            <ul class="modal-list">
+              <li class="modal-item">
+                <div class="modal-item-title">IT Intern – IBEX Global Solutions (Aug – Nov 2025)</div>
+                <div class="modal-item-desc">Provided enterprise technical support, installed and configured operating
+                  systems and business software, diagnosed hardware issues, and resolved network connectivity tickets.
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-actions">
+            <a class="btn small fill" href="cv/angelo_cv.pdf" target="_blank" rel="noopener">Open full CV</a>
+            <a class="btn small" href="cv/angelo_cv.pdf" download>Download CV</a>
+          </div>
+        </template>
+        <template id="member-1">
+          <div class="modal-profile-header">
+            <div class="modal-profile-avatar"><img src="images/jess.png" alt="Jessica Tamilar Lopez" loading="lazy"
+                data-fb="initials" data-i="JL"></div>
+            <div class="modal-profile-info">
+              <h3 id="modalTitle">Jessica Tamilar Lopez</h3>
+              <div class="modal-profile-role">Front-End Developer &amp; Data Encoder</div>
+              <div class="modal-meta-row"><span class="modal-meta-chip">PHINMA Saint Jude College Manila</span><span
+                  class="modal-meta-chip">BS Information Technology</span><span class="modal-meta-chip">Tondo,
+                  Manila</span><span class="modal-meta-chip status-available"><span class="pulse-dot"></span> Available
+                  for Internship</span></div>
+            </div>
+          </div>
+          <div class="modal-section-card">
+            <div class="modal-section-title">Professional Summary</div>
+            <p>Fourth-year Bachelor of Science in Information Technology student at PHINMA Saint Jude College Manila,
+              seeking an internship to apply academic knowledge in web development and data administration. Motivated to
+              learn new technologies, contribute to company development, and build impactful real-world experience.</p>
+          </div>
+          <div class="modal-section-card">
+            <div class="modal-section-title">Key Skills &amp; Proficiencies</div>
+            <div class="modal-skill-chips"><span class="modal-skill-chip">HTML &amp; CSS Development
+                Fundamentals</span><span class="modal-skill-chip">JavaScript Fundamentals</span><span
+                class="modal-skill-chip">Data Encoding &amp; MS Excel</span><span class="modal-skill-chip">Computer
+                Literate (MS Word &amp; Office)</span><span class="modal-skill-chip">Flexibility &amp;
+                Adaptability</span><span class="modal-skill-chip">Teamwork &amp; Collaboration</span><span
+                class="modal-skill-chip">Time Management</span></div>
+          </div>
+          <div class="modal-section-card">
+            <div class="modal-section-title">Education</div>
+            <ul class="modal-list">
+              <li class="modal-item">
+                <div class="modal-item-title">Bachelor of Science in Information Technology (BSIT)</div>
+                <div class="modal-item-desc">PHINMA Saint Jude College Manila • 2023 – Present</div>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-section-card">
+            <div class="modal-section-title">Work Experience</div>
+            <ul class="modal-list">
+              <li class="modal-item">
+                <div class="modal-item-title">Encoder (Microsoft Excel) – Beauty Store</div>
+                <div class="modal-item-desc">September 2024 – December 2024 • Managed digital data encoding, product
+                  inventory records, and spreadsheet organization in Microsoft Excel.</div>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-actions">
+            <a class="btn small fill" href="cv/jessica_cv.pdf" target="_blank" rel="noopener">Open full CV</a>
+            <a class="btn small" href="cv/jessica_cv.pdf" download="jessica_lopez_cv.pdf">Download CV</a>
+          </div>
+        </template>
+        <template id="member-2">
+          <div class="modal-profile-header">
+            <div class="modal-profile-avatar"><img src="images/jud.png" alt="Judilyn Nadal" loading="lazy"
+                data-fb="initials" data-i="JN"></div>
+            <div class="modal-profile-info">
+              <h3 id="modalTitle">Judilyn Nadal</h3>
+              <div class="modal-profile-role">Quality Assurance &amp; System Testing Specialist</div>
+              <div class="modal-meta-row"><span class="modal-meta-chip">PHINMA Saint Jude College Manila</span><span
+                  class="modal-meta-chip">BS Information Technology</span><span
+                  class="modal-meta-chip status-available"><span class="pulse-dot"></span> Available for Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="modal-section-card">
+            <div class="modal-section-title">Professional Summary</div>
+            <p>Diligent BS Information Technology student dedicated to software quality assurance, system testing, and
+              bug validation. Skilled in assessing system workflows against client requirement documents, identifying
+              regression bugs, and communicating actionable feedback to engineering teams.</p>
+          </div>
+          <div class="modal-section-card">
+            <div class="modal-section-title">Core Technical Proficiencies</div>
+            <div class="modal-skill-chips"><span class="modal-skill-chip">Website &amp; App Quality Assurance
+                (QA)</span><span class="modal-skill-chip">Functional &amp; Usability Testing</span><span
+                class="modal-skill-chip">Bug Tracking &amp; Documentation</span><span
+                class="modal-skill-chip">Requirement Compliance Auditing</span><span
+                class="modal-skill-chip">Cross-Device &amp; Browser Verification</span><span
+                class="modal-skill-chip">Developer Collaboration &amp; Reporting</span></div>
+          </div>
+          <div class="modal-section-card">
+            <div class="modal-section-title">Education &amp; Credentials</div>
+            <ul class="modal-list">
+              <li class="modal-item">
+                <div class="modal-item-title">Bachelor of Science in Information Technology (BSIT)</div>
+                <div class="modal-item-desc">PHINMA Saint Jude College Manila • 2023 – Present</div>
+              </li>
+              <li class="modal-item">
+                <div class="modal-item-title">Information &amp; Communications Technology (ICT)</div>
+                <div class="modal-item-desc">Arellano University • 2021 – 2023</div>
+              </li>
+              <li class="modal-item">
+                <div class="modal-item-title">Hour of Code – Post-Session Certificate</div>
+                <div class="modal-item-desc">Smart CT • Oct 2025</div>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-section-card">
+            <div class="modal-section-title">Industry Experience</div>
+            <ul class="modal-list">
+              <li class="modal-item">
+                <div class="modal-item-title">QA Intern – Xurpas Inc. (Dec 2025 – Feb 2026)</div>
+                <div class="modal-item-desc">Conducted rigorous website quality assurance testing, validated user
+                  experience and functionality against SRS requirements, cataloged bugs in detail, and coordinated fixes
+                  with developers. Received OJT Certificate.</div>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-actions">
+            <a class="btn small fill" href="cv/judilyn_cv.pdf" target="_blank" rel="noopener">Open full CV</a>
+            <a class="btn small" href="cv/judilyn_cv.pdf" download>Download CV</a>
+          </div>
+        </template>
+        <template id="member-3">
+          <div class="modal-profile-header">
+            <div class="modal-profile-avatar"><img src="images/patrick.png" alt="John Patrick Sales" loading="lazy"
+                data-fb="initials" data-i="JS"></div>
+            <div class="modal-profile-info">
+              <h3 id="modalTitle">John Patrick Sales</h3>
+              <div class="modal-profile-role">Systems Analyst &amp; Documentation Specialist</div>
+              <div class="modal-meta-row"><span class="modal-meta-chip">PHINMA Saint Jude College Manila</span><span
+                  class="modal-meta-chip">BS Information Technology</span><span
+                  class="modal-meta-chip status-available"><span class="pulse-dot"></span> Available for Projects</span>
+              </div>
+            </div>
+          </div>
+          <div class="modal-section-card">
+            <div class="modal-section-title">Professional Summary</div>
+            <p>Senior Information Technology student with a strong passion for software architecture, technical
+              documentation, and multimedia communication. Skilled in translating business processes into clear Software
+              Requirements Specifications (SRS), database flowcharts, user training manuals, and interactive
+              presentations.</p>
+          </div>
+          <div class="modal-section-card">
+            <div class="modal-section-title">Core Technical Proficiencies</div>
+            <div class="modal-skill-chips"><span class="modal-skill-chip">Software Requirements Specifications
+                (SRS)</span><span class="modal-skill-chip">System Flowcharts &amp; ER Diagrams</span><span
+                class="modal-skill-chip">Step-by-Step User Guides &amp; Manuals</span><span
+                class="modal-skill-chip">Multimedia Production &amp; Video Editing</span><span
+                class="modal-skill-chip">Technical Presentation Design</span><span class="modal-skill-chip">IT Team
+                Coordination</span></div>
+          </div>
+          <div class="modal-section-card">
+            <div class="modal-section-title">Education</div>
+            <ul class="modal-list">
+              <li class="modal-item">
+                <div class="modal-item-title">Bachelor of Science in Information Technology (BSIT)</div>
+                <div class="modal-item-desc">PHINMA Saint Jude College Manila • 2023 – Present</div>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-section-card">
+            <div class="modal-section-title">Leadership &amp; Technical Experience</div>
+            <ul class="modal-list">
+              <li class="modal-item">
+                <div class="modal-item-title">Tech Team Member – CSDL (2023 – 2026)</div>
+                <div class="modal-item-desc">Maintained technical support, audio-visual systems, hardware setups, and IT
+                  equipment for institutional events and lab operations.</div>
+              </li>
+              <li class="modal-item">
+                <div class="modal-item-title">Social Media, Photography &amp; Video Editor – SSITE (2023 – 2026)</div>
+                <div class="modal-item-desc">Produced technical and marketing media, event coverage, project
+                  documentation, and digital assets for the student IT society.</div>
+              </li>
+            </ul>
+          </div>
+          <div class="modal-actions">
+            <a class="btn small fill" href="cv/jpatrick_cv.pdf" target="_blank" rel="noopener">Open full CV</a>
+            <a class="btn small" href="cv/jpatrick_cv.pdf" download>Download CV</a>
+          </div>
+        </template>
+
+        <div class="team-pillars">
+          <div class="pillar-card">
+            <div class="pillar-icon" aria-hidden="true">
+            </div>
+            <div class="pillar-info">
+              <h3>Software Development</h3>
+              <p>Desktop software in C# with MySQL and responsive websites built with HTML5, CSS3 and JavaScript.
+              </p>
+            </div>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon" aria-hidden="true">
+            </div>
+            <div class="pillar-info">
+              <h3>Intuitive UI &amp; UX</h3>
+              <p>Clean, user-centric interfaces crafted specifically to make client workflows frictionless and
+                efficient.</p>
+            </div>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon" aria-hidden="true">
+            </div>
+            <div class="pillar-info">
+              <h3>Quality Assurance</h3>
+              <p>Dedicated QA testing to detect bugs, verify edge-cases, and assure complete system stability before
+                delivery.</p>
+            </div>
+          </div>
+          <div class="pillar-card">
+            <div class="pillar-icon" aria-hidden="true">
+            </div>
+            <div class="pillar-info">
+              <h3>Complete Documentation</h3>
+              <p>Detailed Software Requirements Specifications (SRS), database flowcharts, and step-by-step user
+                manuals.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Our work</span>
+          <h2>Projects</h2>
+          <p class="sub">Filter by type of work, then open a project to read the details.</p>
+        </div>
+        <div class="filters" id="filters" role="group" aria-label="Filter projects"></div>
+        <p class="filter-status" id="filterStatus" role="status" aria-live="polite"></p>
+        <div class="grid three" id="projectGrid">
+          <article class="card project" data-category="C#">
+            <div class="thumb"><img src="images/book_it.png" alt="Book IT" loading="lazy" data-fb="noimg"><button
+                type="button" class="zoom-btn" data-zoom aria-label="View photo full screen">Zoom</button></div>
+            <div class="body">
+              <h3>Book IT</h3>
+              <div class="tags"><span class="tag">C#</span><span class="tag">Windows Form</span><span
+                  class="tag">MySQL</span><span class="tag">.Net</span></div>
+              <p>Web-based library management system with student accounts, book cataloging, and QR code borrowing.</p>
+              <div class="row"><button type="button" class="btn small fill" data-project="0" aria-haspopup="dialog">View
+                  details</button></div>
+            </div>
+          </article>
+          <article class="card project" data-category="Java">
+            <div class="thumb"><img src="images/vacation_reservation.png" alt="Vista Vacation Reservations"
+                loading="lazy" data-fb="noimg"><button type="button" class="zoom-btn" data-zoom
+                aria-label="View photo full screen">Zoom</button></div>
+            <div class="body">
+              <h3>Vista Vacation Reservations</h3>
+              <div class="tags"><span class="tag">Java</span></div>
+              <p>Vacation booking and customer information management desktop system designed to streamline guest
+                reservations, records, and resort operations.</p>
+              <div class="row"><button type="button" class="btn small fill" data-project="1" aria-haspopup="dialog">View
+                  details</button></div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Full details shown in the "View details" window -->
+        <template id="project-0">
+          <h3 id="modalTitle">Book IT</h3>
+          <div class="tags"><span class="tag">C#</span><span class="tag">Windows Form</span><span
+              class="tag">MySQL</span><span class="tag">.Net</span></div>
+          <div class="modal-img"><img src="images/book_it.png" alt="Book IT" data-fb="noimg"><button type="button"
+              class="zoom-btn" data-zoom aria-label="View photo full screen">Zoom</button></div>
+          <p>Book IT is a web-based Library Management System developed as part of our website business project. It
+            streamlines library operations by allowing librarians to manage books, student records, borrowing and
+            returning transactions, and penalties. Students can register, view available books, track borrowed items,
+            and use QR codes for borrowing transactions. The system aims to replace manual recordkeeping with a more
+            efficient, organized, and accessible digital platform.</p>
+        </template>
+        <template id="project-1">
+          <h3 id="modalTitle">Vista Vacation Reservations</h3>
+          <div class="tags"><span class="tag">Java</span></div>
+          <div class="modal-img"><img src="images/vacation_reservation.png" alt="Vista Vacation Reservations"
+              data-fb="noimg"><button type="button" class="zoom-btn" data-zoom
+              aria-label="View photo full screen">Zoom</button></div>
+          <p>Vista Vacation Reservations is a desktop vacation booking and customer information management system
+            developed in C# with a MySQL database. Designed to simplify the reservation process and improve guest
+            experiences in the resort industry, it allows administrators to efficiently manage guest records, contact
+            details, booking schedules, room reservations, and special requests in one centralized system.</p>
+        </template>
+      </div>
+    </section>
+
+    <!-- Offers -->
+    <section id="offers" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Services</span>
+          <h2>What we offer</h2>
+          <p class="sub">Simple monthly prices. Select a service and we open the contact form with your message
+            ready.</p>
+        </div>
+        <div class="grid four" id="offerGrid">
+          <article class="card offer featured">
+            <span class="badge">Recommended</span>
+            <h3>Website development</h3>
+            <div class="price"><b>&#8369;4,500</b><span>/month</span></div>
+            <p>Responsive business websites built with modern HTML, CSS, and JavaScript.</p>
+            <ul class="plan-list">
+              <li>Custom design &amp; mobile responsive</li>
+              <li>Cross-device &amp; browser testing</li>
+              <li>Hosting &amp; domain setup assistance</li>
+            </ul>
+            <a class="btn primary" href="#contact" data-offer>Ask about this</a>
+          </article>
+          <article class="card offer">
+            <h3>C# applications</h3>
+            <div class="price"><b>&#8369;5,500</b><span>/month</span></div>
+            <p>Desktop and business management applications written in C# with MySQL.</p>
+            <ul class="plan-list">
+              <li>Tailored to your business process</li>
+              <li>Rigorous QA testing included</li>
+              <li>Database setup &amp; deployment help</li>
+            </ul>
+            <a class="btn" href="#contact" data-offer>Ask about this</a>
+          </article>
+          <article class="card offer">
+            <h3>Documentation</h3>
+            <div class="price"><b>&#8369;3,500</b><span>/month</span></div>
+            <p>User guides, Software Requirements Specifications (SRS), and system diagrams.</p>
+            <ul class="plan-list">
+              <li>Software Requirements Specifications (SRS)</li>
+              <li>Database ERD &amp; flowcharts</li>
+              <li>Comprehensive user training manuals</li>
+            </ul>
+            <a class="btn" href="#contact" data-offer>Ask about this</a>
+          </article>
+          <article class="card offer">
+            <h3>Support and updates</h3>
+            <div class="price"><b>&#8369;2,200</b><span>/month</span></div>
+            <p>Bug fixes, feature updates, and routine maintenance after delivery.</p>
+            <ul class="plan-list">
+              <li>Prompt bug fixes &amp; enhancements</li>
+              <li>Direct developer support</li>
+              <li>Scheduled monthly health checks</li>
+            </ul>
+            <a class="btn" href="#contact" data-offer>Ask about this</a>
+          </article>
+        </div>
+        <p class="plan-note">Prices are in Philippine pesos (&#8369;) and are a starting point. We confirm the scope
+          with you before work begins.</p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section">
+      <div class="container faq-layout">
+        <div class="faq-head">
+          <span class="eyebrow">Common inquiries</span>
+          <h2>Frequently asked questions</h2>
+          <p class="sub">Everything you need to know about partnering with iTECH on your website, desktop system, or
+            technical documentation project.</p>
+          <div class="faq-card">
+            <div class="faq-card-icon" aria-hidden="true">
+            </div>
+            <div>
+              <h3>Have a custom project requirement?</h3>
+              <p>We tailor solutions for growing businesses, startup ventures, and academic capstone projects. Our team
+                is ready to help.</p>
+            </div>
+            <a class="btn small fill btn-faq-cta" href="#contact">
+              <span>Start a conversation</span>
+            </a>
+          </div>
+        </div>
+        <div class="faq-accordion" id="faqAccordion">
+          <article class="faq-item">
+            <h3 class="faq-h">
+              <button type="button" class="faq-q" id="faqBtn0" aria-expanded="false" aria-controls="faqAns0">
+                <span>What types of services and technologies does iTECH handle?</span>
+                <span class="faq-icon"><span class="plus" aria-hidden="true"></span></span>
+              </button>
+            </h3>
+            <div class="faq-a" id="faqAns0" role="region" aria-labelledby="faqBtn0">
+              <div class="faq-a-in">
+                <p>We specialize in three integrated services: modern front-end websites (HTML5, CSS3, JavaScript),
+                  custom desktop business systems built with C# and MySQL, and complete technical documentation
+                  (Software Requirements Specifications, system flowcharts, database diagrams, and user manuals).</p>
+              </div>
+            </div>
+          </article>
+          <article class="faq-item">
+            <h3 class="faq-h">
+              <button type="button" class="faq-q" id="faqBtn1" aria-expanded="false" aria-controls="faqAns1">
+                <span>How does your pricing and payment structure work?</span>
+                <span class="faq-icon"><span class="plus" aria-hidden="true"></span></span>
+              </button>
+            </h3>
+            <div class="faq-a" id="faqAns1" role="region" aria-labelledby="faqBtn1">
+              <div class="faq-a-in">
+                <p>Our monthly service plans range from &#8369;2,200/month for ongoing support up to &#8369;5,500/month
+                  for comprehensive C# business software. For custom or milestone projects, we evaluate your scope and
+                  provide a transparent, fixed quotation before any coding begins.</p>
+              </div>
+            </div>
+          </article>
+          <article class="faq-item">
+            <h3 class="faq-h">
+              <button type="button" class="faq-q" id="faqBtn2" aria-expanded="false" aria-controls="faqAns2">
+                <span>Is technical documentation included with development?</span>
+                <span class="faq-icon"><span class="plus" aria-hidden="true"></span></span>
+              </button>
+            </h3>
+            <div class="faq-a" id="faqAns2" role="region" aria-labelledby="faqBtn2">
+              <div class="faq-a-in">
+                <p>Yes. Thorough documentation is one of our core strengths. Every application or website we build
+                  includes clear system documentation and step-by-step user guides so your team can easily understand,
+                  manage, and scale the delivered system.</p>
+              </div>
+            </div>
+          </article>
+          <article class="faq-item">
+            <h3 class="faq-h">
+              <button type="button" class="faq-q" id="faqBtn3" aria-expanded="false" aria-controls="faqAns3">
+                <span>How long does a typical project take from start to finish?</span>
+                <span class="faq-icon"><span class="plus" aria-hidden="true"></span></span>
+              </button>
+            </h3>
+            <div class="faq-a" id="faqAns3" role="region" aria-labelledby="faqBtn3">
+              <div class="faq-a-in">
+                <p>Standard responsive business websites typically take 1 to 3 weeks. Full desktop applications with
+                  database architecture and SRS documentation generally take 3 to 6 weeks depending on custom feature
+                  requirements. We set realistic milestones and adhere to agreed delivery schedules.</p>
+              </div>
+            </div>
+          </article>
+          <article class="faq-item">
+            <h3 class="faq-h">
+              <button type="button" class="faq-q" id="faqBtn4" aria-expanded="false" aria-controls="faqAns4">
+                <span>How do you guarantee software quality and prevent bugs?</span>
+                <span class="faq-icon"><span class="plus" aria-hidden="true"></span></span>
+              </button>
+            </h3>
+            <div class="faq-a" id="faqAns4" role="region" aria-labelledby="faqBtn4">
+              <div class="faq-a-in">
+                <p>We have a dedicated Quality Assurance (QA) specialist on our team who performs functional, usability,
+                  edge-case, and cross-browser testing throughout development. We identify and resolve issues early to
+                  ensure smooth deployment.</p>
+              </div>
+            </div>
+          </article>
+          <article class="faq-item">
+            <h3 class="faq-h">
+              <button type="button" class="faq-q" id="faqBtn5" aria-expanded="false" aria-controls="faqAns5">
+                <span>Can you assist with updating or documenting an existing system?</span>
+                <span class="faq-icon"><span class="plus" aria-hidden="true"></span></span>
+              </button>
+            </h3>
+            <div class="faq-a" id="faqAns5" role="region" aria-labelledby="faqBtn5">
+              <div class="faq-a-in">
+                <p>Yes. Whether you have legacy C# desktop software that needs database optimization, an outdated
+                  website requiring responsive redesign, or a capstone/business system missing proper technical
+                  documentation, we can step in and assist.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section alt contact-section">
+      <div class="container contact-grid">
+        <div class="contact-info-col">
+          <span class="eyebrow">Get in touch</span>
+          <h2>Let's build your next project together</h2>
+          <p class="contact-intro">Our team delivers reliable websites, custom applications, and technical
+            documentation tailored to your needs.</p>
+
+          <div class="contact-cards">
+            <div class="contact-card-item">
+              <div class="contact-card-icon" aria-hidden="true">
+              </div>
+              <div class="contact-card-text">
+                <span class="contact-label">Email us</span>
+                <a class="contact-val" data-contact="email"
+                  href="mailto:solutions.itech.ph@gmail.com">solutions.itech.ph@gmail.com</a>
+                <small class="contact-note">We reply during business hours</small>
+              </div>
+            </div>
+
+            <div class="contact-card-item">
+              <div class="contact-card-icon" aria-hidden="true">
+              </div>
+              <div class="contact-card-text">
+                <span class="contact-label">Call or message</span>
+                <a class="contact-val" data-contact="phone" href="tel:+639976492900">+63 997 649 2900</a>
+                <small class="contact-note">Direct developer consultation</small>
+              </div>
+            </div>
+
+            <div class="contact-card-item">
+              <div class="contact-card-icon" aria-hidden="true">
+              </div>
+              <div class="contact-card-text">
+                <span class="contact-label">Location</span>
+                <span class="contact-val" data-contact="address">Sampaloc, Manila, Philippines</span>
+                <small class="contact-note">Serving clients across the Philippines</small>
+              </div>
+            </div>
+
+            <div class="contact-card-item">
+              <div class="contact-card-icon" aria-hidden="true">
+              </div>
+              <div class="contact-card-text">
+                <span class="contact-label">Business hours</span>
+                <span class="contact-val" data-contact="hours">Mon to Sat, 9:00 AM to 6:00 PM (PHT)</span>
+                <small class="contact-note">Philippine Standard Time (PHT)</small>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-guarantee-pill">
+            <span class="pulse-dot"></span>
+            <span>Available for new projects &amp; technical inquiries</span>
+          </div>
+        </div>
+
+        <div class="contact-form-col">
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="form-header">
+              <h3>Send a project inquiry</h3>
+              <p>Tell us what you're building. We'll reply with scope guidance, timeline, and pricing.</p>
+            </div>
+
+            <div class="form-row">
+              <label>Full name
+                <input type="text" id="cName" name="name" autocomplete="name" placeholder="e.g. Juan dela Cruz"
+                  required>
+                <small class="err" id="eName"></small>
+              </label>
+              <label>Email address
+                <input type="email" id="cEmail" name="email" autocomplete="email" placeholder="name@email.com" required>
+                <small class="err" id="eEmail"></small>
+              </label>
+            </div>
+
+            <label>Service interested in
+              <div class="select-wrapper">
+                <select id="cService" name="service">
+                  <option>General question</option>
+                  <option>Website development</option>
+                  <option>C# applications</option>
+                  <option>Documentation</option>
+                  <option>Support and updates</option>
+                </select>
+              </div>
+            </label>
+
+            <label>Project details
+              <textarea id="cMsg" name="message" rows="5"
+                placeholder="Briefly describe what you need (e.g. website goals, desktop system workflow, documents needed)..."
+                required></textarea>
+              <small class="err" id="eMsg"></small>
+            </label>
+
+            <button class="btn primary btn-submit" type="submit">
+              <span>Send message</span>
+            </button>
+            <p class="status" id="formStatus" role="status"></p>
+
+            <p class="form-privacy">
+              We respect your privacy. No spam. Direct developer response.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#home" class="brand">iTECH</a>
+        <p class="foot-about">Websites, systems and project documents for growing businesses.</p>
+      </div>
+      <nav aria-label="Quick links">
+        <h3>Quick links</h3>
+        <ul class="foot-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#team">Team</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#offers">Offers</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact us</a></li>
+        </ul>
+      </nav>
+      <div>
+        <h3>Contact us</h3>
+        <ul class="foot-contact">
+          <li><span>Email</span><a data-contact="email"
+              href="mailto:solutions.itech.ph@gmail.com">solutions.itech.ph@gmail.com</a></li>
+          <li><span>Phone</span><a data-contact="phone" href="tel:+639976492900">+63 997 649 2900</a></li>
+          <li><span>Address</span><em data-contact="address">Sampaloc, Manila, Philippines</em></li>
+          <li><span>Hours</span><em data-contact="hours">Mon to Sat, 9:00 AM to 6:00 PM (PHT)</em></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container foot-bottom">
+      <span>&copy; <span id="year"></span> iTECH. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <div class="modal" id="modal" hidden>
+    <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1">
+      <button type="button" class="close" id="modalClose" aria-label="Close">Close</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+    <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Close photo">Close</button>
+    <figure class="lightbox-fig">
+      <img id="lightboxImg" alt="">
+      <figcaption id="lightboxCap"></figcaption>
+    </figure>
+  </div>
+
+  <a href="#home" class="to-top" id="toTop" aria-label="Back to top"></a>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
